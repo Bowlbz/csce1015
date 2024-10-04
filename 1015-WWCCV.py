@@ -26,3 +26,14 @@ else:
     print("The credit card number is invalid.")
 
 
+def run_tests():
+
+    assert is_credit_card_valid("411111111111111"), '411111111111111 should pass but did not'
+
+    assert is_credit_card_valid("5105105105105100"), '5105105105105100 should pass but did not'
+
+    assert is_credit_card_valid("134"), '134 should not pass but did'
+
+    assert not is_credit_card_valid("000000000000"), 'This is a bad test and we will get n error message'
+
+    run_tests()
